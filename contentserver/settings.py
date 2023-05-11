@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.sitemaps',
     'django.contrib.staticfiles',
     'django.contrib.messages',
+    'django_countries',
     'phonenumber_field',
     'users',
     #'PhoneNumber',
@@ -226,6 +227,9 @@ CMS_LANGUAGES = {
 CMS_TEMPLATES = (
     ## Customize this
     ('themed.html', 'Themed'),
+    ('single.html', 'Single'),
+    ('services.html', 'Services'),
+    ('products.html', 'Products'),
 )
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'

@@ -6,6 +6,10 @@ from django.contrib import admin
 from django.contrib.sitemaps.views import sitemap
 from django.urls import include, path
 
+from orders.views import OrderFormView, OrdersView
+from products.views import ProductsView
+from users.views import UserView
+
 admin.autodiscover()
 
 urlpatterns = [
@@ -26,7 +30,10 @@ if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 urlpatterns += (
-
+    path('products/', ProductsView.as_view(), name="products"),
+    path('order/', OrderFormView.as_view(), name="order"),
+    path('orders/', OrdersView.as_view(), name="ordera"),
+    path('user/', UserView.as_view(), name="user"),
     path('accounts/', include('allauth.urls')),
     path("admin/", admin.site.urls),
     path("accounts/", include("django.contrib.auth.urls")),

@@ -11325,3 +11325,22 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+.fh5co-content-box .gallery .card {
+  border: none;
+  background: transparent;
+}
+.fh5co-content-box .gallery .card img {
+  border-radius: 0;
+  max-height: 580px;
+}
+.fh5co-content-box .gallery .card .card-body {
+  background: #ff8013;
+}
+.fh5co-content-box .gallery .card .card-body h4 {
+  color: #fff;
+}
+.fh5co-content-box .gallery .card .card-body p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}

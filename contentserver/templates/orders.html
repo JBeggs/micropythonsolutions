@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "orders_base.html" %}
 {% load cms_tags %}
 
 {% block title %}title{% endblock title %}
@@ -7,7 +7,9 @@
 
         <!-- Navigation-->
         {% include 'layouts/navigation/navigation.html' %}
-        <!-- Services-->
-        {% include 'layouts/main/services.html' %}
 
+        {% for order_item in order_items %}
+               {{ order_item.product.name }}<br />
+        {% endfor %}
+        {{ order.total_cost }}
 {% endblock content %}
