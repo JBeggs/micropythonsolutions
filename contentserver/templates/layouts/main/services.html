@@ -1,40 +1,46 @@
+{% load site_content %}
+
 <section class="page-section" id="services">
     <div class="container">
         <div class="text-center">
-            <h2 class="section-heading text-uppercase">Services</h2>
-            <h3 class="section-subheading text-muted">Micropython is relatively new, about 5 years old, so it's still developing.</h3>
+            <h2 class="section-heading text-uppercase">{% get_edit_content request 'services_heading' 'desc' 'Services' %}</h2>
+            <h3 class="section-subheading text-muted">{% get_edit_content request 'services_heading_desc' 'desc' 'Micropython is relatively new, about 5 years old, so it is still developing.' %}</h3>
         </div>
-        <div class="row text-center">
+        <div class="row text-justified">
+
             <div class="col-md-4">
-                <img class="img-fluid" src="{{ MEDIA_URL }}img/services/django.png" alt="..." />
-                <h4 class="my-3">Django Development</h4>
-                <p class="text-muted">Need a web presence, social media integration?.</p>
+                {% get_edit_content request 'services_automation_image' 'thumb' '<img class="img-fluid" src="/media/img/services/home-automation.png" alt="..." />' %}
+                <h4 class="my-3">{% get_edit_content request 'services_automation_header_1' 'desc' 'Home automation' %}</h4>
+                <p class="text-muted">{% get_edit_content request 'services_automation_header_1_desc' 'desc' 'It is nice to know what going on at home. Electricity usage, turn off or on lights, devices. Let someone in remotely.' %}</p>
             </div>
             <div class="col-md-4">
-                <img class="img-fluid" src="{{ MEDIA_URL }}img/services/hosting.png" alt="..." />
-                <h4 class="my-3">Web and Email Hosting</h4>
-                <p class="text-muted">Web and Email hosting for the django web presence for under R200.</p>
+                {% get_edit_content request 'services_sensors_image' 'thumb' '<img class="img-fluid" src="/media/img/services/remote-sensor.png" alt="..." />' %}
+                <h4 class="my-3">{% get_edit_content request 'services_sensors_header_1' 'desc' 'Remote Sensors systems' %}</h4>
+                <p class="text-muted">{% get_edit_content request 'services_sensors_header_1_desc' 'desc' 'Garden management system for ph levels, humidity, temperature and soil moisture. Remote security monitoring.' %}</p>
             </div>
             <div class="col-md-4">
-                <img class="img-fluid" src="{{ MEDIA_URL }}img/services/django-cms.png" alt="..." />
-                <h4 class="my-3">Application Development</h4>
-                <p class="text-muted">Need something developed with social media integration.Or just a survey?</p>
+                {% get_edit_content request 'services_hobbies_image' 'thumb' '<img class="img-fluid" src="/media/img/services/hobbies.png" alt="..." />' %}
+                <h4 class="my-3">{% get_edit_content request 'services_hobbies_header_1' 'desc' 'Hobbies' %}</h4>
+                <p class="text-muted">{% get_edit_content request 'services_hobbies_header_1_desc' 'desc' 'Add an ESP32 to an old remote control car or aeroplane and control it from your phone. A camera to watch your 3D printer or lazor cutter.' %}</p>
+            </div>
+
+
+            <div class="col-md-4">
+                {% get_edit_content request 'services_image_1' 'thumb' '' %}
+                <h4 class="my-3">{% get_edit_content request 'services_image_1_header' 'desc' '' %}</h4>
+                <p class="text-muted">{% get_edit_content request 'services_image_1_header_sub' 'desc' '' %}</p>
             </div>
             <div class="col-md-4">
-                <img class="img-fluid" src="{{ MEDIA_URL }}img/services/home-automation.png" alt="..." />
-                <h4 class="my-3">Home automation</h4>
-                <p class="text-muted">As cliche'd as it is, it's nice to know what going on at home. Electricity usage, turn off or on lights, devices. Let someone in remotely.</p>
+                {% get_edit_content request 'services_image_2' 'thumb' '' %}
+                <h4 class="my-3">{% get_edit_content request 'services_image_2_header' 'desc' '' %}</h4>
+                <p class="text-muted">{% get_edit_content request 'services_image_2_header_sub' 'desc' '' %}</p>
             </div>
             <div class="col-md-4">
-                <img class="img-fluid" src="{{ MEDIA_URL }}img/services/remote-sensor.png" alt="..." />
-                <h4 class="my-3">Remote Sensors systems</h4>
-                <p class="text-muted">Garden management system for ph levels, humidity, temperature and soil moisture. Remote security monitoring.</p>
+                {% get_edit_content request 'services_image_3' 'thumb' '' %}
+                <h4 class="my-3">{% get_edit_content request 'services_image_3_header' 'desc' '' %}</h4>
+                <p class="text-muted">{% get_edit_content request 'services_image_3_header_sub' 'desc' '' %}</p>
             </div>
-            <div class="col-md-4">
-                <img class="img-fluid" src="{{ MEDIA_URL }}img/services/hobbies.png" alt="..." />
-                <h4 class="my-3">Hobbies</h4>
-                <p class="text-muted">Add an ESP32 to an old remote control car or aeroplane and control it from your phone. A camera to watch your 3D printer or lazor cutter.</p>
-            </div>
+
         </div>
     </div>
 </section>

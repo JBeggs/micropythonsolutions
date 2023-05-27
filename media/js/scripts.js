@@ -1,3 +1,11 @@
+/*!
+* Start Bootstrap - Agency v7.0.4 (https://startbootstrap.com/theme/agency)
+* Copyright 2013-2021 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
+*/
+//
+// Scripts
+// 
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -44,28 +52,3 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
-
-;(function () {
-
-    'use strict';
-
-    var wowAnimation = function() {
-        var wow = new WOW(
-            {
-                animateClass: 'animated',
-                offset:       150,
-                callback:     function(box) {
-                    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-                }
-            }
-        );
-        wow.init();
-    }
-
-
-    (function($) {
-        wowAnimation();
-    })(jQuery);
-
-
-}());
