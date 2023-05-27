@@ -100,7 +100,7 @@ DATABASES = {
         'CONN_MAX_AGE': 0,
         'ENGINE': 'django.db.backends.mysql',
         # 'HOST': 'jodybeggs.mysql.pythonanywhere-services.com',
-        # 'NAME': 'jodybeggs$content_server',
+        # 'NAME': 'micropythonsolutions$content_server',
         'HOST': '127.0.0.1',
         'NAME': 'micropythonsolutions$content_server',
         'PASSWORD': 'dfasdfsdaf424ffdsdad!@',
