@@ -5,10 +5,8 @@
 */
 //
 // Scripts
-// 
-$( document ).ready(function() {
-    console.log( "ready!" );
-    $('body').fadeIn()
+//
+
     window.addEventListener('DOMContentLoaded', event => {
 
         // Navbar shrink function
@@ -54,4 +52,3 @@ $( document ).ready(function() {
         });
 
     });
-});

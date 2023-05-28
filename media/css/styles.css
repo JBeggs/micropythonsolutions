@@ -208,7 +208,7 @@ sup {
 }
 
 a {
-  color: black;
+  color: #ffc800;
   text-decoration: underline;
 }
 a:hover {
@@ -2949,12 +2949,12 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #37643a;
+  background-color: #ffc800;
   border-color: #ffc800;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #1a2a1c;
+  background-color: #d9aa00;
   border-color: #cca000;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
@@ -7334,7 +7334,7 @@ textarea.form-control-lg {
 
 /* rtl:end:remove */
 .text-primary {
-  color: #bfed35 !important;
+  color: #ffc800 !important;
 }
 
 .text-secondary {
@@ -10937,7 +10937,6 @@ p {
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #212529;
-    opacity: 0.8;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -10958,7 +10957,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("/media/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -10972,8 +10971,8 @@ header.masthead .masthead-subheading {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 header.masthead .masthead-heading {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 3.25rem;
+  font-weight: 700;
   line-height: 3.25rem;
   margin-bottom: 2rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10985,14 +10984,14 @@ header.masthead .masthead-heading {
     padding-bottom: 12.5rem;
   }
   header.masthead .masthead-subheading {
-    font-size: 1.7rem;
+    font-size: 2.25rem;
     font-style: italic;
     line-height: 2.25rem;
     margin-bottom: 2rem;
   }
   header.masthead .masthead-heading {
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 4.5rem;
+    font-weight: 700;
     line-height: 4.5rem;
     margin-bottom: 4rem;
   }
@@ -11012,7 +11011,7 @@ header.masthead .masthead-heading {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgb(22 98 24 / 90%);
+  background: rgba(255, 200, 0, 0.9);
   align-items: center;
   justify-content: center;
   opacity: 0;
@@ -11037,7 +11036,7 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
-
+  font-style: italic;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -11138,7 +11137,7 @@ header.masthead .masthead-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #18893b;
+  background-color: #ffc800;
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
@@ -11267,11 +11266,10 @@ header.masthead .masthead-heading {
 }
 
 section#contact {
-  background-color: black;
-  background-image: url("/media/img/footer-image.jpg");
+  background-color: #212529;
+  background-image: url("/media/img/map-image.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
 }
 section#contact .section-heading {
   color: #fff;
@@ -11325,23 +11323,4 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
-.fh5co-content-box .gallery .card {
-  border: none;
-  background: transparent;
-}
-.fh5co-content-box .gallery .card img {
-  border-radius: 0;
-  max-height: 580px;
-}
-.fh5co-content-box .gallery .card .card-body {
-  background: #ff8013;
-}
-.fh5co-content-box .gallery .card .card-body h4 {
-  color: #fff;
-}
-.fh5co-content-box .gallery .card .card-body p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
 }
