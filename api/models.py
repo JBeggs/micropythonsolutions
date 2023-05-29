@@ -94,3 +94,12 @@ class Content(models.Model):
     image_tag.short_description = 'Image'
     image_tag.allow_tags = True
 
+
+class Message(models.Model):
+
+    name = models.CharField(max_length=200)
+    email = models.CharField(max_length=200)
+    phone = models.CharField(max_length=200)
+    message = models.TextField(_('Description'), blank=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)

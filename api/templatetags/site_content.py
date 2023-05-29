@@ -36,7 +36,7 @@ def get_edit_textarea(name, content, form_action, blog_id):
     edit_html = f"""{content.desc}<div style="" onclick='edit_data_{name}();' class='content_text_{name}'>
     {edit_image}</div>
     <script>
-        function edit_data_{name}(){{  
+        function edit_data_{name}(){{
             $("#myModal").modal("show");
             $(".modal-body").html($('.content_editor_{name}_div').html());
         }}
@@ -73,6 +73,7 @@ def get_edit_image(request, name, default_text, content, form_action, _type, blo
     <script>
 
         function edit_data_{name}(){{  
+            alert('test')
             $("#myModal").modal("show");
             $(".modal-body").html($('.content_editor_{name}_div').html());
 

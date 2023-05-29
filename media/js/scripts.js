@@ -52,3 +52,19 @@
         });
 
     });
+
+    function validate_contact(){
+
+        name = $('#name').val();
+        email = $('#email').val();
+        phone = $('#phone').val();
+        message = $('#message').val();
+
+        if(name && email && phone && message){
+
+            $('#contactForm').submit();
+
+
+        }
+
+    }

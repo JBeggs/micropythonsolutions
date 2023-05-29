@@ -208,8 +208,7 @@ sup {
 }
 
 a {
-  color: #ffc800;
-  text-decoration: underline;
+  color: black;
 }
 a:hover {
   color: #cca000;
@@ -11267,9 +11266,10 @@ header.masthead .masthead-heading {
 
 section#contact {
   background-color: #212529;
-  background-image: url("/media/img/map-image.png");
+  background-image: url("/media/img/contact-image.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 section#contact .section-heading {
   color: #fff;
@@ -11318,6 +11318,19 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-weight: 700;
   color: #ced4da;
 }
+
+
+section#development {
+  background-color: #212529;
+  background-image: url("/media/img/development-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+section#development .section-heading {
+  color: #fff;
+}
+
 
 .footer {
   text-align: center;

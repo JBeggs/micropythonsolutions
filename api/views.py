@@ -8,10 +8,11 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, redirect
 
 from django.conf import settings
+from django.utils.safestring import mark_safe
 from django.views.generic import TemplateView
 
 
-from api.models import Content
+from api.models import Content, Message
 
 from PIL import Image
 
@@ -74,3 +75,17 @@ def delete(request, id):
             delete.delete()
 
     return redirect(request.META.get('HTTP_REFERER'))
+
+
+def save_message(request):
+    error = ''
+    try:
+        message = Message()
+        message.name = mark_safe('')
+        message.email = mark_safe('')
+        message.message = mark_safe('')
+        message.save()
+    except:
+        error = ''
+
+    return redirect(request.META.get('HTTP_REFERER') + f'?error={error}')
